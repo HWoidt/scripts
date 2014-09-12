@@ -16,7 +16,7 @@ file_types = [
 
 # list of tuples (url, target_dir)
 # page at url is fetched and all matching references are downloaded into
-# target_dir
+# ./target_dir (-> relative to the current working directory)
 source_list = [
         ("https://www.kth.se/social/course/IL2206/subgroup/ht-2014-50315/page/lectures-67/",
                 "lectures"),
