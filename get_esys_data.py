@@ -7,6 +7,7 @@ import re
 import time
 import shutil
 from zipfile import ZipFile, BadZipFile
+from getpass import getpass
 
 # list of regexes for matching urls
 file_types = [
@@ -34,7 +35,7 @@ def credentials():
         returns tuple(name, password)
         """
         name = input("name?:")
-        pw = input("pw?:")
+        pw = getpass("pw?:")
         return (name, pw)
 
 def do_login(browser, credential_provider=credentials):
